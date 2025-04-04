@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator App</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <div class="calculator">
+                <table>
+                    <tr>
+                        <td>
+                            <button type="button" onclick="clearBtn()">C</button>
+                        </td>
+                        <td colspan="3">
+                            <input type="text" id ="display">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button style="width: 50px;" type="button" onclick="addCharacter('+')">+</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="addCharacter('1')">1</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="addCharacter('2')">2</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="addCharacter('3')">3</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" onclick="addCharacter('-')">-</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="addCharacter('4')">4</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="addCharacter('5')">5</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="addCharacter('6')">6</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" onclick="addCharacter('*')">*</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="addCharacter('7')">7</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="addCharacter('8')">8</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="addCharacter('9')">9</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" onclick="addCharacter('/')">/</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="addCharacter('.')">.</button>
+                        </td>
+                        <td>
+                            <button type="button" onclick="addCharacter('0')">0</button>
+                        </td>
+                        <td>
+                            <button class="equal-btn" type="button" onclick="calculate()">=</button>
+                        </td>
+                    </tr>
+                </table>
+        </div>
+        <script src="calculations.js" ></script>
+    </body>
+</html>
